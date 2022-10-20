@@ -1,0 +1,43 @@
+@font-face {
+  font-family: luckiestGuy;
+  src: url(https://cdn.glitch.global/d15ec977-d889-4884-95ce-0fa4beb69a73/LuckiestGuy-Regular.ttf?v=1663329565863);
+}
+body{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2d9d9;
+}
+h1{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 32px;
+  font-family:luckiestGuy;
+  color: white;
+  
+  
+}
+.nav{
+  margin: auto;
+  padding: 30px 0;
+  text-align: center;
+  width: 50%;
+  max-width: 500px;
+}
+a{
+  display: block;
+  padding: 15px 0;
+  margin: 8px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: #ffb5af;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  box-shadow: 2px 4px 5px 0 rgba(240, 168, 168,0.5);
+  transition: .2s ease-in-out;
+}
+a:hover{
+  background-color: #ff9999;
+}

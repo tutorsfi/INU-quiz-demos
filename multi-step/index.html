@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>multi step demo</title>
+    <link rel="stylesheet" href="/multi-step/style.css" />
+    <script src="https://kit.fontawesome.com/1f3b43b536.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="step-row">
+        <div class="info-col">
+        <div class="info">
+          <small>1 = ei kuvaa minua lainkaan 2 = kuvaa huonosti 3 = kuvaa jonkin verran 4 = kuvaa melko hyvin 5 = kuvaa minua täysin</small>
+          </div>
+        </div>
+      </div>
+      
+      <form id="form1">
+        <h3>Näen tulevaisuuteni valoisana ja mielekkäänä.</h3>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="btn-box">
+          <button type="button" id="next1">seuraava</button>
+        </div>
+      </form>
+      
+      <form id="form2">
+        <h3>Olen luottavainen itseeni ja omiin kykyihini nyt ja tulevaisuudessa.</h3>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="btn-box">
+          <button type="button" id="back1">edellinen</button>
+          <button type="button" id="next2">seuraava</button>
+        </div>
+      </form>
+      
+      <form id="form3">
+        <h3>Koen, että voin kasvaa ja kehittyä ihmisenä.</h3>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="btn-box">
+          <button type="button" id="back2">edellinen</button>
+          <button type="submit">lähetä</button>
+        </div>
+      </form>
+      
+      
+      
+    </div>
+    
+    <script src="/multi-step/script.js"></script>
+  </body>
+</html>

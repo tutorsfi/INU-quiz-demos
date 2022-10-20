@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Slider demo</title>
+    <link rel="stylesheet" href="/feedback1/style.css" />
+    <script src="https://kit.fontawesome.com/1f3b43b536.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="info">
+          <p>1 = ei kuvaa minua lainkaan 2 = kuvaa huonosti 3 = kuvaa jonkin verran 4 = kuvaa melko hyvin 5 = kuvaa minua täysin</p>
+        </div>
+        <div class="question">
+          <p>Näen tulevaisuuteni valoisana ja mielekkäänä.</p>
+        </div>
+        <div class="rating">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const hearts = document.getElementsByClassName('fa-solid');
+      let clicked = false;
+      
+      const clickColor = '#3eadcf';
+      const hoverColor = '#c2e5f0';
+      const notSelectedColor = '#f2f2f2';
+      
+      // hearts change color when clicked
+        hearts[0].addEventListener('click', () => {
+        hearts[0].style.color = clickColor;
+        hearts[1].style.color = notSelectedColor;
+        hearts[2].style.color = notSelectedColor;
+        hearts[3].style.color = notSelectedColor;
+        hearts[4].style.color = notSelectedColor;
+        clicked = true;
+      });
+      hearts[1].addEventListener('click', () => {
+        hearts[0].style.color = clickColor;
+        hearts[1].style.color = clickColor;
+        hearts[2].style.color = notSelectedColor;
+        hearts[3].style.color = notSelectedColor;
+        hearts[4].style.color = notSelectedColor;
+        clicked = true;
+      });
+      hearts[2].addEventListener('click', () => {
+        hearts[0].style.color = clickColor;
+        hearts[1].style.color = clickColor;
+        hearts[2].style.color = clickColor;
+        hearts[3].style.color = notSelectedColor;
+        hearts[4].style.color = notSelectedColor;
+        clicked = true;
+      });
+      hearts[3].addEventListener('click', () => {
+        hearts[0].style.color = clickColor;
+        hearts[1].style.color = clickColor;
+        hearts[2].style.color = clickColor;
+        hearts[3].style.color = clickColor;
+        hearts[4].style.color = notSelectedColor;
+        clicked = true;
+      });
+      hearts[4].addEventListener('click', () => {
+        hearts[0].style.color = clickColor;
+        hearts[1].style.color = clickColor;
+        hearts[2].style.color = clickColor;
+        hearts[3].style.color = clickColor;
+        hearts[4].style.color = clickColor;
+        clicked = true;
+      });
+      
+      // hearts change color on hover 
+      
+      // fist heart
+      hearts[0].addEventListener('mouseover', () => {
+        if(!clicked) {
+        hearts[0].style.color = hoverColor;
+        hearts[1].style.color = notSelectedColor;
+        hearts[2].style.color = notSelectedColor;
+        hearts[3].style.color = notSelectedColor;
+        hearts[4].style.color = notSelectedColor;
+        }
+      })
+      // if user is only hovering and not clicking
+      // the color returns to grey on mouseout
+      hearts[0].addEventListener("mouseout", () => {
+        if(!clicked) {
+          hearts[0].style.color = notSelectedColor;
+        }
+      });
+      // second heart
+      hearts[1].addEventListener('mouseover', () => {
+        if(!clicked) {
+        hearts[0].style.color = hoverColor;
+        hearts[1].style.color = hoverColor;
+        hearts[2].style.color = notSelectedColor;
+        hearts[3].style.color = notSelectedColor;
+        hearts[4].style.color = notSelectedColor;
+        }
+      })
+      hearts[1].addEventListener("mouseout", () => {
+        if(!clicked) {
+          hearts[0].style.color = notSelectedColor;
+          hearts[1].style.color = notSelectedColor;
+        }
+      });
+      // third heart
+      hearts[2].addEventListener('mouseover', () => {
+        if(!clicked) {
+        hearts[0].style.color = hoverColor;
+        hearts[1].style.color = hoverColor;
+        hearts[2].style.color = hoverColor;
+        hearts[3].style.color = notSelectedColor;
+        hearts[4].style.color = notSelectedColor;
+        }
+      })
+      hearts[2].addEventListener("mouseout", () => {
+        if(!clicked) {
+          hearts[0].style.color = notSelectedColor;
+          hearts[1].style.color = notSelectedColor;
+          hearts[2].style.color = notSelectedColor;
+        }
+      });
+      // fourth heart
+      hearts[3].addEventListener('mouseover', () => {
+        if(!clicked) {
+        hearts[0].style.color = hoverColor;
+        hearts[1].style.color = hoverColor;
+        hearts[2].style.color = hoverColor;
+        hearts[3].style.color = hoverColor;
+        hearts[4].style.color = notSelectedColor;
+        }
+      })
+      hearts[3].addEventListener("mouseout", () => {
+        if(!clicked) {
+          hearts[0].style.color = notSelectedColor;
+          hearts[1].style.color = notSelectedColor;
+          hearts[2].style.color = notSelectedColor;
+          hearts[3].style.color = notSelectedColor;
+        }
+      });
+      // fifth heart
+      hearts[4].addEventListener('mouseover', () => {
+        if(!clicked) {
+        hearts[0].style.color = hoverColor;
+        hearts[1].style.color = hoverColor;
+        hearts[2].style.color = hoverColor;
+        hearts[3].style.color = hoverColor;
+        hearts[4].style.color = hoverColor;
+        }
+      })
+      hearts[4].addEventListener("mouseout", () => {
+        if(!clicked) {
+          hearts[0].style.color = notSelectedColor;
+          hearts[1].style.color = notSelectedColor;
+          hearts[2].style.color = notSelectedColor;
+          hearts[3].style.color = notSelectedColor;
+          hearts[4].style.color = notSelectedColor;
+        }
+      });
+    </script>
+  </body>
+</html>
