@@ -1,6 +1,8 @@
 # Contents of the project!
 
-I'm building different demo elements for a web survey. Inside this project i have different slider examples, a feedback style demo with icons and multi-step questions. Everything that i test out regarding the project goes inside this one website.
+I'm building different demo elements for a web survey. Inside this project i have different slider examples, a feedback style demo with icons and multi-step questions. Everything that i test out regarding the project goes inside this one website. On this repository you can find all the code.
+
+Find hosted website in: https://demosliders.glitch.me
 
 ## What's in this project?
 
